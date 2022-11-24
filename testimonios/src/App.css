@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body{
+  background-color: #e7e7e7;
+}
+
+p{
+  font-size: 18px;
+}
+
+h1{
+  text-align: center;
+  margin: 20px 0px;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+
+  color: transparent;
+  background: linear-gradient(yellow,red,black );
+  background-clip: text;
+ 
+}
+
+@keyframes text{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.App{
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap ;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background: rgb(221,19,19);
+  background: linear-gradient(0deg, rgba(221,19,19,0.7595237924271271) 0%, rgba(1,1,1,0.706302503911721) 23%, rgba(255,0,0,0.7623249128753063) 53%, rgba(1,1,1,0.74831931063441) 73%, rgba(255,0,0,0.6082632882254464) 87%, rgba(194,192,63,0.6110644086736257) 100%);  */
+ 
+}
+
+.contenedor-principal{
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.contenedor-kombat{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body {
+  background-color: #111111;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
